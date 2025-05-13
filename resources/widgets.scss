@@ -458,7 +458,8 @@ a.close {
 }
 
 .sidebox-content {
-    border: 1px solid $color_primary25;
+    // border: 1px solid $color_primary25;
+    box-shadow:0 4px 18px 0 rgba(38, 38, 98, 0.048), 0 1.5px 6px 0 rgba(38, 38, 98, 0.062);
     border-top: none;
     margin: 0 -5px;
     padding: 1px 0.5em 3px;

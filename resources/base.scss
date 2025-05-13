@@ -18,14 +18,15 @@
 }
 
 a {
-    color: $color_link75;
+    color: #f79421;
+    transition: color 0.2s ease-in-out;
 
     &:hover {
-        color: $color_link100;
+        color: #262662;
     }
 
     &:active {
-        color: $color_link200;
+        color: #262662;
     }
 }
 
@@ -85,10 +86,10 @@ th {
 
 .form-area {
     display: inline-block;
-    // background: $color_primary5;
-    padding: 10px 10px 10px;
-    border-radius: 15px;
-    border: 1px solid $color_primary25;
+    padding: 16px 18px 16px;
+    border-radius: 1.5em;
+    background: rgba(255,255,255,0.85);
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
 }
 
 div.info-float {
@@ -100,8 +101,16 @@ footer {
     color: #fff;
     display: block;
     width: 100%;
-    position: absolute;
+    // position: absolute;
     bottom: 0;
+    text-align: center;
+    height: 40px;
+    background: #f79421;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border-radius: 0 0 1.5em 1.5em;
+    box-shadow: 0 -2px 12px 0 rgba(0,0,0,0.08);
 }
 
 body {
@@ -110,7 +119,7 @@ body {
     margin: 0 auto;
     font-size: $base_font_size;
     line-height: 1.231;
-    background: $color_primary5;
+    background: #f2f2ff;
     font-family: "Roboto", sans-serif;
     color: $color_primary100;
     height: 100%;
@@ -159,7 +168,7 @@ hr {
 }
 
 #content {
-    margin: 52px auto auto;
+    margin: 20px auto 0px auto;
 
     // Header
     width: 90%;
@@ -175,11 +184,12 @@ hr {
 footer {
     text-align: center;
     height: 40px;
-    border-top: 1px solid $color_primary25;
     background: #f79421;
     display: flex;
     align-items: center;
     justify-content: center;
+    // border-radius: 0 0 1.5em 1.5em;
+    box-shadow: 0 -2px 12px 0 rgba(0,0,0,0.08);
 }
 
 html {
@@ -215,11 +225,12 @@ noscript #noscript {
     text-align: center;
     max-width: 30%;
     position: fixed;
-    border-radius: $widget_border_radius;
+    border-radius: 1.5em;
     z-index: 100;
     bottom: -4px;
     right: -4px;
-    padding: 5px 6px 6px 5px;
+    padding: 8px 12px 10px 10px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
 
     a {
         color: orange;
@@ -253,12 +264,11 @@ noscript #noscript {
 
 #contest-info {
     font-size: 1.25em;
-    border: 5px solid $highlight_blue;
-    border-left: 5px dotted white;
-    border-radius: 0 $widget_border_radius $widget_border_radius 0;
+    border-radius: 1.5em;
     background: rgba(0, 0, 0, 0.77);
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.12);
     z-index: 100000;
-    padding: 10px 12px;
+    padding: 14px 18px;
     color: white;
     cursor: move;
     position: fixed;
@@ -282,11 +292,11 @@ noscript #noscript {
 #page-container {
     min-height: 100%;
     position: relative;
-    margin: 0 auto;
-    border-right: 1px solid $color_primary25;
-    border-left: 1px solid $color_primary25;
+    margin: 9vh auto 2vh auto;
     background: $color_pageBg;
     max-width: 100em;
+    border-radius: 2em;
+    box-shadow: 0 4px 32px 0 rgba(0,0,0,0.10);
 }
 
 // border-bottom: 1px solid rgb(204, 204, 204)

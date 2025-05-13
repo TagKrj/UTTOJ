@@ -299,8 +299,8 @@
             {% else %}
                 <span class="anon">
                     <a href="{{ url('auth_login') }}?next={{ LOGIN_RETURN_PATH|urlencode }}"><b>{{ _('Log in') }}</b></a>
-                    &nbsp;{{ _('or') }}&nbsp;
-                    <a href="{{ url('registration_register') }}"><b>{{ _('Sign up') }}</b></a>
+                    <!-- &nbsp;{{ _('or') }}&nbsp;
+                    <a href="{{ url('registration_register') }}"><b>{{ _('Sign up') }}</b></a> -->
                 </span>
             {% endif %}
         </span>
@@ -358,7 +358,9 @@
 
     {% block bodyend %}{% endblock %}
 
-    <footer>
+   
+</div>
+ <footer>
         <span id="footer-content">
             <!-- <br> -->
             <!-- {{_('proudly powered by %(dmoj)s', dmoj=safe('<a style="color: #808080" href="https://dmoj.ca"><b>DMOJ</b></a>'))}} |
@@ -374,6 +376,5 @@
           </form>
         </span>
     </footer>
-</div>
 </body>
 </html>

@@ -1,5 +1,126 @@
 {% extends "base.html" %}
 
+{% block media %}
+<style>
+.auth-flow-form, .form-area {
+    background: #fff;
+    box-shadow: 0 4px 18px 0 rgba(38,38,98,0.13), 0 1.5px 6px 0 rgba(38,38,98,0.10);
+    border-radius: 20px;
+    padding: 1.5em 1.5em 1.1em 1.5em;
+    max-width: 370px;
+    margin: 2.5em auto 1.5em auto;
+    border: none;
+    position: relative;
+    animation: fadeInLogin 0.7s cubic-bezier(0.4,0,0.2,1);
+    backdrop-filter: blur(1.5px);
+}
+@keyframes fadeInLogin {
+    from { opacity: 0; transform: translateY(24px) scale(0.98); }
+    to { opacity: 1; transform: none; }
+}
+.auth-flow-form input[type="text"],
+.auth-flow-form input[type="password"],
+.auth-flow-form input[type="email"],
+.form-area input[type="text"],
+.form-area input[type="password"],
+.form-area input[type="email"] {
+    width: 100%;
+    padding: 0.85em 1em;
+    border-radius: 14px;
+    border: none;
+    background: #f3f4fa;
+    box-shadow: 0 1.5px 6px 0 rgba(38,38,98,0.07);
+    font-size: 1.08em;
+    color: #262662;
+    margin-bottom: 0.7em;
+    transition: box-shadow 0.18s, background 0.18s, font-size 0.13s;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    letter-spacing: 0.01em;
+}
+.auth-flow-form input[type="text"]::placeholder,
+.auth-flow-form input[type="password"]::placeholder,
+.auth-flow-form input[type="email"]::placeholder,
+.form-area input[type="text"]::placeholder,
+.form-area input[type="password"]::placeholder,
+.form-area input[type="email"]::placeholder {
+    color: #a3a6c2;
+    font-size: 1em;
+    opacity: 1;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+.auth-flow-form input[type="text"]:focus,
+.auth-flow-form input[type="password"]:focus,
+.auth-flow-form input[type="email"]:focus,
+.form-area input[type="text"]:focus,
+.form-area input[type="password"]:focus,
+.form-area input[type="email"]:focus {
+    background: #e9eafd;
+    box-shadow: 0 3px 12px 0 rgba(38,38,98,0.18);
+    outline: none;
+    font-size: 1.12em;
+}
+.auth-flow-form label, .auth-flow-form th, .form-area label, .form-area th {
+    font-size: 1em;
+    font-weight: 600;
+    color: #262662;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.2em;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+.auth-flow-form button, .auth-flow-form input[type="submit"],
+.form-area button, .form-area input[type="submit"] {
+    width: 100%;
+    background: linear-gradient(90deg, #262662 0%, #f79421 100%);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.08em;
+    font-weight: 700;
+    padding: 0.9em 0;
+    margin-top: 1em;
+    box-shadow: 0 2px 8px 0 rgba(38,38,98,0.13);
+    transition: background 0.18s, box-shadow 0.18s, transform 0.13s;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+.auth-flow-form button:hover, .auth-flow-form input[type="submit"]:hover,
+.form-area button:hover, .form-area input[type="submit"]:hover {
+    background: linear-gradient(90deg, #f79421 0%, #262662 100%);
+    box-shadow: 0 4px 16px 0 rgba(38,38,98,0.18);
+    transform: scale(1.03);
+}
+.auth-flow-form, .form-area {
+    font-size: 1.08em;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    line-height: 1.6;
+}
+.auth-flow-form .error, .form-area .error, .form-field-error {
+    color: #e74c3c;
+    background: rgba(231,76,60,0.09);
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin-bottom: 0.7em;
+    font-size: 0.98em;
+    text-align: left;
+}
+.auth-flow-form a, .form-area a {
+    color: #262662;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.auth-flow-form a:hover, .form-area a:hover {
+    color: #f79421;
+}
+.auth-flow-form hr, .form-area hr {
+    border: none;
+    border-bottom: 1.5px dashed #262662;
+    margin: 1.2em 0 0.8em 0;
+}
+</style>
+{% endblock %}
+
 {% block body %}
     <div class="auth-flow-form">
         <form action="" method="post" class="form-area">
