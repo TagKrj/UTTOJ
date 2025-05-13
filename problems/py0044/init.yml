@@ -1,0 +1,9 @@
+archive: tinhsofibothun.zip
+checker: standard
+test_cases:
+- in: 00.in
+  out: 00.out
+  points: 1
+- in: 01.in
+  out: 01.out
+  points: 1

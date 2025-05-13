@@ -116,9 +116,30 @@
                       title="{{ _('Press Ctrl-Enter or Command-Enter to abort.') }}">
                     {% csrf_token %}
                     <input style="float:left" type="submit" value="{{ _('Abort') }}" class="button">
+                    <input id="refresh-button" style="float:left; margin-left: 20px;" type="button" value="Xem kết quả (10s)" class="button" disabled>
                     <br><br>
                 </form>
             </div>
+            <script type="text/javascript">
+                $(function () {
+                    var countdown = 10;
+                    var refreshBtn = $('#refresh-button');
+                    var interval = setInterval(function () {
+                        countdown--;
+                        if (countdown > 0) {
+                            refreshBtn.val("Xem kết quả (" + countdown + "s)");
+                        } else {
+                            clearInterval(interval);
+                            refreshBtn.prop('disabled', false);
+                            refreshBtn.val("Xem kết quả");
+                        }
+                    }, 1000);
+    
+                    refreshBtn.on('click', function () {
+                        location.reload();
+                    });
+                });
+            </script>
         {% endif %}
     {% endif %}
 {% endblock %}

@@ -1,0 +1,33 @@
+archive: hinhchunhat.zip
+checker: standard
+test_cases:
+- in: Test01.in
+  out: Test01.out
+  points: 1
+- in: Test02.in
+  out: Test02.out
+  points: 1
+- in: Test03.in
+  out: Test03.out
+  points: 1
+- in: Test04.in
+  out: Test04.out
+  points: 1
+- in: Test05.in
+  out: Test05.out
+  points: 1
+- in: Test06.in
+  out: Test06.out
+  points: 1
+- in: Test07.in
+  out: Test07.out
+  points: 1
+- in: Test08.in
+  out: Test08.out
+  points: 1
+- in: Test09.in
+  out: Test09.out
+  points: 1
+- in: Test10.in
+  out: Test10.out
+  points: 1

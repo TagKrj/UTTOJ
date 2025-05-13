@@ -1,0 +1,33 @@
+archive: timktongnhonhattuhaidayso.zip
+checker: standard
+test_cases:
+- in: kmin0.in
+  out: kmin0.out
+  points: 1
+- in: kmin1.in
+  out: kmin1.out
+  points: 1
+- in: kmin2.in
+  out: kmin2.out
+  points: 1
+- in: kmin3.in
+  out: kmin3.out
+  points: 1
+- in: kmin4.in
+  out: kmin4.out
+  points: 1
+- in: kmin5.in
+  out: kmin5.out
+  points: 1
+- in: kmin6.in
+  out: kmin6.out
+  points: 1
+- in: kmin7.in
+  out: kmin7.out
+  points: 1
+- in: kmin8.in
+  out: kmin8.out
+  points: 1
+- in: kmin9.in
+  out: kmin9.out
+  points: 1

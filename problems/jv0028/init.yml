@@ -1,0 +1,9 @@
+archive: khoangcachtudiemdenduongthangtrongkhonggian.zip
+checker: standard
+test_cases:
+- in: 01.in
+  out: 01.out
+  points: 1
+- in: 02.in
+  out: 02.out
+  points: 1
